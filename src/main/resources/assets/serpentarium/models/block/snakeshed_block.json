@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "serpentarium:block/snakeshed_block"
+  }
+}
