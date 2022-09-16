@@ -10,11 +10,12 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.tempestwind.serpentarium.SerpentariumMod;
+import net.tempestwind.serpentarium.item.ModItemGroup;
 
 public class ModBlocks {
 
     public static  final Block SNAKESHED_BLOCK = registerBlock("snakeshed_block",
-            new Block(FabricBlockSettings.of(Material.SOLID_ORGANIC).strength(0.5f).nonOpaque()), ItemGroup.MISC);
+            new Block(FabricBlockSettings.of(Material.SOLID_ORGANIC).strength(0.5f).nonOpaque()), ModItemGroup.SERPENTARIUM);
 
     private static Block registerBlock(String name, Block block, ItemGroup group) {
         registerBlockItem(name, block, group);
